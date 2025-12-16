@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+pip install -r requirements.txt
+cd gestion_judicial
+python manage.py collectstatic --noinput
+python manage.py migrate
